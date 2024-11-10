@@ -1,0 +1,26 @@
+<!-- frontend/merchant_dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchant Dashboard</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body>
+    <h2>Transaction History</h2>
+    <button onclick="fetchTransactions()">Refresh</button>
+    <table id="transactionTable">
+        <thead>
+            <tr>
+                <th>Payment ID</th>
+                <th>Amount</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="transactionBody"></tbody>
+    </table>
+
+    <script src="scripts/dashboard.js"></script>
+</body>
+</html>

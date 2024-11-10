@@ -1,0 +1,32 @@
+<!-- ~/Desktop/pacifica/frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFT Payment API Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>EFT Payment API Demo</h1>
+
+    <!-- Section to Create Payment -->
+    <h2>Create a Payment</h2>
+    <input type="number" id="amount" placeholder="Enter amount" />
+    <button onclick="createPayment()">Create Payment</button>
+    <p id="paymentId"></p>
+
+    <!-- Section to Verify EFT -->
+    <h2>Verify Payment</h2>
+    <input type="text" id="verifyPaymentId" placeholder="Enter Payment ID" />
+    <button onclick="verifyEFT()">Verify Payment</button>
+    <p id="verifyResponse"></p>
+
+    <!-- Section to Fetch Transaction History -->
+    <h2>Transaction History</h2>
+    <button onclick="fetchTransactionHistory()">Get Transaction History</button>
+    <ul id="transactionHistory"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>

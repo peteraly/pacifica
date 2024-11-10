@@ -1,0 +1,9 @@
+/* frontend/styles/style.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#amount {
+    margin: 10px 0;
+    padding: 8px;
+}
