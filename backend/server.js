@@ -16,6 +16,12 @@ app.use(cors({
     origin: 'http://localhost:8080', // Allow requests from your frontend
 }));
 app.use(bodyParser.json());
+
+// Root route for basic response
+app.get('/', (req, res) => {
+  res.send('Welcome to the API');
+});
+
 app.use('/api/payments', paymentRoutes); // Ensure this line is present
 
 // Start the server
